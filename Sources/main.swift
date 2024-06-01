@@ -37,7 +37,6 @@ class CustomView: NSView {
     }*/
     
     func updateClipboardLabel() {
-        print("update UI")
         let clipboardHistory = ClipboardManager.shared.clipboardHistory
         currentIndex = clipboardHistory.count - 1
         clipboardLabel?.stringValue = clipboardHistory[currentIndex].content
